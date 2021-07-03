@@ -7,23 +7,20 @@
         <title>okok</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h3>About me</h3>
-            <p>Born on March 27, 2003 
-                <br> Born in Queens, NY</p>
+
+        <div class = "navbar">
+            <a class = "active" href = "index.html"> Home </a>
+            <a href = "\pages\contact.html">Contact</a>
+            <a href = "\pages\aboutme.html">About Me</a>
+        </div>
+        
+        <div id = "like_button_container" />
             
-        <h3>Contact Info</h3>
-            <p>Email
-                <br>dong.n@northeastern.edu
-                <br>Phone number
-                <br>9175027700
-                <br>Github
-                <br>Link: 
-                <a href ="https://github.com/NelsonDong41" target = "_blank"> Github </a> 
-            </p>
-        <h3></h3>
-        <!-- script src="" async defer></script -->
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+        <script src="like_button.js"></script>
     </body>
 </html>
