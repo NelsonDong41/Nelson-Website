@@ -1,4 +1,135 @@
-.navbar {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+*, *beforeburger, *afterburger{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    color: #e0e4cc;
+    font-size: 1.2em;
+    line-height: 1.6;
+    background: #ddfeff;
+    /* overflow-x: hidden; */
+}
+
+.menu{
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    z-index: 100;
+    width: 200px;
+    height: 200px;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    filter: drop-shadow(-10px 10px 30px #4444dd)
+}
+
+.hamburger{
+    top: 120px;
+    left: 50px;
+    height: 30px;
+    position: absolute;
+    z-index: 101;
+    display: block;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+.hamburger div{
+    height: 2px;
+    background: #fff;
+    margin: 7px 0px 7px 0px;
+    border-radius: 25px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.one { width: 30px}
+.two { width: 20px; }
+.three { width: 25px;}
+
+.menu:hover div{
+    width: 30px;
+}
+  
+label input { display: none; }
+
+input:checked + .menu {
+    box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+    border-radius: 1;
+}
+  
+input:checked + .menu .hamburger .one{
+    -webkit-transform: translate(0px, 450%) rotate(135deg) ;
+    transform:translate(0px, 450%) rotate(135deg) ;   
+    
+}
+
+input:checked + .menu .hamburger .two{
+    width: 0px;
+}
+
+input:checked + .menu .hamburger .three{
+    width: 30px;
+    -webkit-transform: translate(0px, -450%) rotate(-135deg);
+    transform: translate(0px, -450%) rotate(-135deg); 
+}
+  
+input:checked + .menu + ul {
+    opacity: 1; 
+    -webkit-transform: translate(-100%, 100%);
+    transform: translate(-100%, 100%);
+    -webkit-transition: .5s 0s ease-in-out;
+    transition: .5s 0s ease-in-out;
+}
+
+ul {
+    z-index: 200;
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    opacity: 0;
+    
+}
+  
+a {
+    margin-bottom: 1em;
+    display: block;
+    color: #f38630;
+    text-decoration: none;
+    
+}
+  
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .navbar {
     background-color : #333;
     overflow: hidden;
     position: sticky;
@@ -62,4 +193,4 @@
 .navbutton:hover div{
     width: 30px;
 }
-
+ */

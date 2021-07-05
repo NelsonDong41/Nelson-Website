@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -14,17 +11,31 @@
     </head>
     <body>
 
-        <div class = "navbar">
-            <a class = "navbutton"> 
-                <div class = "one"></div> 
-                <div class = "two"></div>
-                <div class = "three"></div>
-            </a>
-            
-            <a class = "active" href = "..\index.html"> Home </a>
-            <a href = "contact.html">Contact</a>
-            <a href = "aboutme.html">About Me</a>
-        </div>
+        <header>
+            <nav class = "navbar"> 
+                <label>
+                    <input type = "checkbox">
+                    <div class = "menu">
+                        <div class = "hamburger"> 
+                            <div class = "one"></div> 
+                            <div class = "two"></div>
+                            <div class = "three"></div>
+                        </div>
+                    </div>
+
+                    <ul class= "nav-menu" style = "list-style-type: none;">
+                        <li class = "nav-item">
+                            <a href = "index.html" class = "nav-list">Home</a></li>
+                        <li class = "nav-item">
+                            <a href = "aboutme.html" class = "nav-list">About Me</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "contact.html" class = "nav-list">Contact</a>
+                        </li>
+                    </ul>
+                </label>
+            </nav>
+        </header>
         
         <h3>Contact Info</h3>
             <p> Email
