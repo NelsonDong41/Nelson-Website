@@ -1,0 +1,15 @@
+small icons that bounce around on home page.
+icons have facebook github etc
+/
+/
+/
+footers have a scroll bar that lets you know there is content under
+create when pages are long enough to scroll
+/
+/
+/
+make background cooler
+/
+/
+/
+page piling on project section

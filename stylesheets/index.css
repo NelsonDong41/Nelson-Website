@@ -118,7 +118,7 @@ input:checked + .menu + ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    top: 0%;
+    top: -15%;
     width: 100%;
     padding-left: 0px;
 }
