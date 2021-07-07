@@ -1,21 +1,11 @@
-
 @font-face {
     font-family: 'KGHappy';
-    src: url('fonts/KGHAPPY.woff2') format('woff2'), /* Super Modern Browsers */
-        url('fonts/KGHAPPY.woff') format('woff'), /* Pretty Modern Browsers */
-        url('fonts/KGHAPPY.ttf')  format('truetype');
+    src: url('../fonts/KGHAPPY.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/KGHAPPY.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/KGHAPPY.ttf')  format('truetype');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
-}
-
-body::-webkit-scrollbar {
-    display: none;
-  }
-  
-body {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
 }
 
 *, *beforeburger, *afterburger{
@@ -24,11 +14,15 @@ body {
     box-sizing: border-box;
     font-size: 100%;
     font-family: 'KGHAPPY';
-    
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
 
-body{
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
     color: #000000;
     font-size: 1.2em;
     line-height: 1.6;
@@ -49,7 +43,7 @@ body{
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
-    filter: drop-shadow(-10px 10px 30px #446ddd)
+    filter: drop-shadow(-10px 10px 30px #444ddd)
 }
 
 .hamburger{
@@ -85,13 +79,15 @@ body{
 label input { display: none; }
 
 input:checked + .menu {
-    box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
-    border-radius: 1;
+    box-shadow: 0 0 0 100vw rgb(255, 255, 255), 0 0 0 100vh #444ddd;
+    border-radius: 10%;
+    
 }
   
 input:checked + .menu .hamburger .one{
-    -webkit-transform: translate(0px, 450%) rotate(135deg) ;
-    transform:translate(0px, 450%) rotate(135deg) ;   
+    width: 40px;
+    -webkit-transform: translate(-40%, 950%) rotate(225deg) ;
+    transform:translate(-40%, 950%) rotate(225deg);  
     
 }
 
@@ -101,8 +97,9 @@ input:checked + .menu .hamburger .two{
 
 input:checked + .menu .hamburger .three{
     width: 30px;
-    -webkit-transform: translate(0px, -450%) rotate(-135deg);
-    transform: translate(0px, -450%) rotate(-135deg); 
+    -webkit-transform: translate(-40%, 50%) rotate(-225deg);
+    transform: translate(-40%, 50%) rotate(-225deg); 
+    width: 40px;
 }
   
 input:checked + .menu + ul {
@@ -121,9 +118,15 @@ input:checked + .menu + ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    top: auto;
+    top: 0%;
     width: 100%;
     padding-left: 0px;
+}
+
+h1{
+    font-family: 'KGHAPPY';
+    font-weight: normal;
+    text-align: center;
 }
 
 ul {
@@ -136,42 +139,9 @@ ul {
     font-size: 35px;
     font-family: 'KGHAPPY';
 }
-  
 a {
     margin-bottom: 1em;
     display: block;
     color: #f38630;
     text-decoration: none;
 }
-  
-header h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 80%;
-    text-align: center;
-    font-family: 'KGHAPPY';
-    font-weight: normal;
-}
-
-h1{
-    font-family: 'KGHAPPY';
-    font-weight: normal;
-    text-align: center;
-}
-
-.bio{
-    padding-left: 25%;
-    padding-right: 25%;
-    text-align: center;
-    width: 50%
-}
-
-
-
-
-
-
-
