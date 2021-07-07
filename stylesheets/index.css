@@ -43,7 +43,7 @@ body {
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
-    filter: drop-shadow(-10px 10px 30px #444ddd)
+    filter: drop-shadow(-10px 10px 30px #1100ff)
 }
 
 .hamburger{
@@ -60,8 +60,8 @@ body {
 }
 
 .hamburger div{
-    height: 2px;
-    background: #fff;
+    height: 4px;
+    background: rgb(255, 255, 255);
     margin: 7px 0px 7px 0px;
     border-radius: 25px;
     transition: all 0.5s;
@@ -86,8 +86,8 @@ input:checked + .menu {
   
 input:checked + .menu .hamburger .one{
     width: 40px;
-    -webkit-transform: translate(-40%, 950%) rotate(225deg) ;
-    transform:translate(-40%, 950%) rotate(225deg);  
+    -webkit-transform: translate(-40%, 450%) rotate(225deg) ;
+    transform:translate(-40%, 450%) rotate(225deg);  
     
 }
 
@@ -97,8 +97,8 @@ input:checked + .menu .hamburger .two{
 
 input:checked + .menu .hamburger .three{
     width: 30px;
-    -webkit-transform: translate(-40%, 50%) rotate(-225deg);
-    transform: translate(-40%, 50%) rotate(-225deg); 
+    -webkit-transform: translate(-40%, -100%) rotate(-225deg);
+    transform: translate(-40%, -100%) rotate(-225deg); 
     width: 40px;
 }
   
@@ -129,7 +129,7 @@ h1{
     text-align: center;
 }
 
-ul {
+label ul {
     z-index: 200;
     position: relative;
     top: 20%;
@@ -139,6 +139,7 @@ ul {
     font-size: 35px;
     font-family: 'KGHAPPY';
 }
+
 a {
     margin-bottom: 1em;
     display: block;

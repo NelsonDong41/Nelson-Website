@@ -8,6 +8,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../stylesheets/index.css">
+        <link rel="stylesheet" type = "text/css" href="../fullpage.css">
         <link rel="stylesheet" href="../stylesheet/projects.css">
 
     </head>
@@ -26,7 +27,7 @@
 
                     <ul class= "nav-menu" style = "list-style-type: none;">
                         <li class = "nav-item">
-                            <a href = "index.html" class = "nav-list">Home</a></li>
+                            <a href = "home.html" class = "nav-list">Home</a></li>
                         <li class = "nav-item">
                             <a href = "aboutme.html" class = "nav-list">About Me</a>
                         </li>
@@ -41,7 +42,118 @@
                 </label> 
             </nav>
         </header>
+
+        <div id="fullpage">
+            <div class="section one-area" id = "one">
+                <div class="wrapper">
+                    <div class="banner-area">
+                        <h2>Multipurpose <br> Website</h2>
+                        <p>textawesdfaesdfg geadsuyfgfcukeqadgsfkhuycgbahkedgytfgukcasgdbxcjhbaeuykgfwaed fchasdfqewvbhdgcvhawevgsfuyhghkasdcb</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section two-area" id = "two">
+                <div class="wrapper">
+                    <h3>About me</h3>
+                    <p>textawesdfaesdfg geadsuyfgfcukeqadgsfkhuycgbahkedgytfgukcasgdbxcjhbaeuykgfwaed fchasdfqewvbhdgcvhawevgsfuyhghkasdcb aekhfgwaegeadsuyfgfcukeqadgsfkhuycgbahkedgytfgukcasgdbxcjhbaeuykgfwaed fchasdfqewvbhdgcvhawevgsfuyhghkasdcb aekhfgwaegeadsuyfgfcukeqadgsfkhuycgbahkedgytfgukcasgdbxcjhbaeuykgfwaed fchasdfqewvbhdgcvhawevgsfuyhghkasdcb aekhfgwaegeadsuyfgfcukeqadgsfkhuycgbahkedgytfgukcasgdbxcjhbaeuykgfwaed fchasdfqewvbhdgcvhawevgsfuyhghkasdcb aekhfgwaegeadsuyfgfcukeqadgsfkhuycgbahkedgytfgukcasgdbxcjhbaeuykgfwaed fchasdfqewvbhdgcvhawevgsfuyhghkasdcb aekhfgwaegeadsuyfgfcukeqadgsfkhuycgbahkedgytfgukcasgdbxcjhbaeuykgfwaed fchasdfqewvbhdgcvhawevgsfuyhghkasdcb aekhfgwae</p>
+                </div>
+            </div>
+
+            <div class="section three-area" id = "three">
+                <h3>Contact</h3>
+                <p>textawesdfaesdfg geadsuyfgfcukeqadgsfkhuycgbahkedgytfgukcasgdbxcjhbaeuykgfwaed fchasdfqewvbhdgcvhawevgsfuyhghkasdcb aekhfgwaegeadsuyfgfcukeqadgsfkhuycgbahkedgytfgukcasgdbxcjhbaeuykgfwaed fchasdfqewvbhdgcvhawevgsfuyhghkasdcb aekhfgwaegeadsuyfgfcukeqadgsfkhuycgbahkedgytfgukcasgdbxcjhbaeuykgfwaed fchasdfqewvbhdgcvhawevgsfuyhghkasdcb aekhfgwaegeadsuyfgfcukeqadgsfkhuycgbahkedgytfgukcasgdbxcjhbaeuykgfwaed fchasdfqewvbhdgcvhawevgsfuyhghkasdcb aekhfgwaegeadsuyfgfcukeqadgsfkhuycgbahkedgytfgukcasgdbxcjhbaeuykgfwaed fchasdfqewvbhdgcvhawevgsfuyhghkasdcb aekhfgwaegeadsuyfgfcukeqadgsfkhuycgbahkedgytfgukcasgdbxcjhbaeuykgfwaed fchasdfqewvbhdgcvhawevgsfuyhghkasdcb aekhfgwae</p>
+            </div>
+
+            <div class="section four-area" id = "four">
+                <div class="wrapper">
+                    <h3>Projects</h3>
+                    <p>textawesdfaesdfg geadsuyfgfcukeqadgsfkhuycgbahkedgytfgukcasgdbxcjhbaeuykgfwaed fchasdfqewvbhdgcvhawevgsfuyhghkasdcb aekhfgwaegeadsuyfgfcukeqadgsfkhuycgbahkedgytfgukcasgdbxcjhbaeuykgfwaed fchasdfqewvbhdgcvhawevgsfuyhghkasdcb aekhfgwaegeadsuyfgfcukeqadgsfkhuycgbahkedgytfgukcasgdbxcjhbaeuykgfwaed fchasdfqewvbhdgcvhawevgsfuyhghkasdcb aekhfgwaegeadsuyfgfcukeqadgsfkhuycgbahkedgytfgukcasgdbxcjhbaeuykgfwaed fchasdfqewvbhdgcvhawevgsfuyhghkasdcb aekhfgwaegeadsuyfgfcukeqadgsfkhuycgbahkedgytfgukcasgdbxcjhbaeuykgfwaed fchasdfqewvbhdgcvhawevgsfuyhghkasdcb aekhfgwaegeadsuyfgfcukeqadgsfkhuycgbahkedgytfgukcasgdbxcjhbaeuykgfwaed fchasdfqewvbhdgcvhawevgsfuyhghkasdcb aekhfgwae</p>
+                </div>
+            </div>
+        </div>
+
+        <script type = "text/javascript" src="../fullpage.js"></script>
+        <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
         
-        
+        <script>
+            var myFullpage = new fullpage('#fullpage', {
+
+                menu: '#menu',
+                lockAnchors: false,
+                anchors:['Project1', 'Project2', 'Project3', 'Comingsoon'],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['Project 1', 'Project 2', 'Project 3', 'Coming Soon'],
+                showActiveTooltip: true,
+                slidesNavigation: false,
+                slidesNavPosition: 'bottom',
+
+                //Scrolling
+                css3: true,
+                scrollingSpeed: 700,
+                autoScrolling: true,
+                fitToSection: true,
+                fitToSectionDelay: 1000,
+                scrollBar: false,
+                easing: 'easeInOutCubic',
+                easingcss3: 'ease',
+                loopBottom: false,
+                loopTop: false,
+                loopHorizontal: true,
+                continuousVertical: false,
+                offsetSections: false,
+                resetSliders: false,
+                fadingEffect: false,
+                normalScrollElements: '#element1, .element2',
+                scrollOverflow: false,
+                scrollOverflowReset: false,
+                scrollOverflowOptions: null,
+                touchSensitivity: 15,
+                bigSectionsDestination: null,
+
+                //Accessibility
+                keyboardScrolling: true,
+                animateAnchor: true,
+                recordHistory: false,
+
+                //Design
+                controlArrows: true,
+                verticalCentered: true,
+                sectionsColor : ['peachpuff', 'lightpink', 'lightsalmon', 'lemonchiffon'],
+                paddingTop: '3em',
+                paddingBottom: '10px',
+                fixedElements: '#header, .footer',
+                responsiveWidth: 0,
+                responsiveHeight: 0,
+                responsiveSlides: false,
+                parallax: false,
+                parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+                dropEffect: false,
+                dropEffectOptions: { speed: 2300, color: '#F82F4D', zIndex: 9999},
+                waterEffect: false,
+                waterEffectOptions: { animateContent: true, animateOnMouseMove: true},
+                cards: false,
+                cardsOptions: {perspective: 100, fadeContent: true, fadeBackground: true},
+
+                //Custom selectors
+                sectionSelector: '.section',
+                slideSelector: '.slide',
+
+                lazyLoading: true,
+
+                //events
+                onLeave: function(origin, destination, direction){},
+                afterLoad: function(origin, destination, direction){},
+                afterRender: function(){},
+                afterResize: function(width, height){},
+                afterReBuild: function(){},
+                afterResponsive: function(isResponsive){},
+                afterSlideLoad: function(section, origin, destination, direction){},
+                onSlideLeave: function(section, origin, destination, direction){}
+            });
+        </script>
     </body>
+
+    
 </html>
