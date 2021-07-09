@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'KGHappy';
     src: url('../fonts/KGHAPPY.woff2') format('woff2'), /* Super Modern Browsers */
@@ -146,3 +147,10 @@ a {
     color: #f38630;
     text-decoration: none;
 }
+
+h2{
+    font-family: 'KGHAPPY';
+    font-weight: normal;
+    text-align: left;
+}
+

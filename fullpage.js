@@ -159,6 +159,8 @@
             sectionsColor : [],
             paddingTop: 0,
             paddingBottom: 0,
+            paddingLeft: 0,
+            paddingRight: 0,
             fixedElements: null,
             responsive: 0, //backwards compabitility with responsiveWiddth
             responsiveWidth: 0,
@@ -1004,6 +1006,14 @@
 
             if(options.paddingBottom){
                 css(section, {'padding-bottom': options.paddingBottom});
+            }
+
+            if(options.paddingLeft){
+                css(section, {'padding-left': options.paddingLeft});
+            }
+
+            if(options.paddingRight){
+                css(section, {'padding-right': options.paddingRight});
             }
 
             if (typeof options.sectionsColor[index] !==  'undefined') {
