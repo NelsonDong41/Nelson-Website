@@ -113,13 +113,13 @@ input:checked + .menu + ul {
     
 }
 
-.nav-menu{
+ul.nav-menu{
 
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    top: -15%;
+    top: -25vh;
     width: 100%;
     padding-left: 0px;
 }
