@@ -104,41 +104,42 @@ input:checked + .menu .hamburger .three{
 }
   
 input:checked + .menu + ul {
+    transform-box: view-box;
     opacity: 1; 
-    -webkit-transform: translate(-100%, 100%);
-    transform: translate(-100%, 100%);
+    -webkit-transform: translate(-100%, 120%);
+    transform: translate(-100%, 120%);
     -webkit-transition: .5s 0s ease-in-out;
     transition: .5s 0s ease-in-out;
     position: fixed;
     
 }
 
-.nav-menu{
+label{
+    
+    display: flex;
+    align-items: center;
+}
 
-    position: absolute;
+ul.nav-menu{
+    
+    z-index: 200;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    top: -15%;
     width: 100%;
     padding-left: 0px;
+    position: absolute;
+    left: 100%;
+    text-align: center;
+    opacity: 0;
+    font-size: 35px;
+    font-family: 'KGHAPPY';
 }
 
 h1{
     font-family: 'KGHAPPY';
     font-weight: normal;
     text-align: center;
-}
-
-label ul {
-    z-index: 200;
-    position: relative;
-    top: 20%;
-    left: 100%;
-    text-align: center;
-    opacity: 0;
-    font-size: 35px;
-    font-family: 'KGHAPPY';
 }
 
 a {
