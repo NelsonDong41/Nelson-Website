@@ -7,7 +7,20 @@
     font-weight: 100;
     font-style: normal;
     font-display: swap;
+
 }
+
+@font-face {
+    font-family: 'Hidden Cocktails';
+    src: url('../fonts/HiddenCocktails-ItalicShadow.woff2') format('woff2'),
+        url('../fonts/HiddenCocktails-ItalicShadow.woff') format('woff'),
+        url('../fonts/HiddenCocktails-ItalicShadow.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 *, *beforeburger, *afterburger{
     margin: 0px;
@@ -111,8 +124,6 @@ input:checked + .menu + ul {
     position: fixed; 
     transform:translateX(0%);
 }
-
-
 
 label{
     

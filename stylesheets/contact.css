@@ -1,0 +1,61 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-size: 36px;
+    font-family:'Hidden Cocktails';
+    margin: 5px 0px;
+    height: 50px;
+}
+
+p{
+    margin: 5px 0px;
+}
+
+
+.icons{
+    margin-top: 5vh;
+    margin-right: 30%;
+}
+
+@keyframes xAxis{
+
+    50% {
+        animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+        transform: translateX(500px);
+    }
+}
+
+@keyframes yAxis {
+    50% {
+      animation-timing-function:cubic-bezier(0, 0.5, 1, 0.5);
+      transform: translateY(-300px);
+    }
+
+}
+    
+.icon-item {
+    animation: xAxis 5s infinite ease-in-out;
+} 
+
+.icon-container{
+    animation: yAxis 2.5s infinite linear;
+}
