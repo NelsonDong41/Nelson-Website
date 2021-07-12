@@ -4,8 +4,9 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>Nelson's First Website</title>
+        <link rel="shortcut icon" type="image/jpg" href="../pictures/Icon.png"/>
+        <meta name="description" content="hello">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="..\stylesheets\index.css">
         <link rel="stylesheet" href="..\stylesheets\contact.css">
@@ -41,25 +42,44 @@
             </nav>
         </header>
         
-        <div class="content">
-            <h1>Contact Info</h1>
-            <!-- <h2> Email </h2>
-                <p>dong.n@northeastern.edu</p>
-            <h2><a href="https://linkedin.com/in/nelson-dong" target = "_blank">LinkedIn</a></h2>
-            <h2><a href ="https://github.com/NelsonDong41" target = "_blank"> Github </a></h2>  -->
-            </p>
-        </div>
-        
-        
-        <div class="icons">
+        <div class="container">
+            <div class="content">
+                <h1>Contact Info</h1>
+            </div>
+            
+            
             <div class="icon-container">
-                <div class = "icon-item" id = "github">
-                    <img src = "../pictures/GitHub-Mark-64px.png" alt = "git">
+
+                <div class="icons">
+                    <div class = "icon-item" id = "github">
+                        <a href="https://github.com/NelsonDong41" target = "_blank"><img src = "../pictures/GitHub-Mark.png" alt = "github"></a>
+                        <div class="text">Github</div>
+                    </div>
+                    <div class = "icon-item" id = "linkedin">
+                        <a href="https://linkedin.com/in/nelson-dong" target = "_blank"><img src = "../pictures/Linkedin.png" alt = "linkedin"></a>
+                        <div class="text">LinkedIn</div>
+                    </div>
+                    <div class = "icon-item" id = "email">
+                        <img onclick = "copy('emailaddress')" src = "../pictures/email.png" alt = "email">
+                        <div class = "text">Email</div>
+                    </div>
+                    <div class = "icon-item" id = "discord">
+                        <img onclick = "copy('discordtag')" src = "../pictures/discord.png" alt = "discord">
+                        <div class="text">Discord</div>
+                    </div>
                 </div>
             </div>
         </div>
         
+
+        <div class="tags">
+            <div id="discordtag">Nelson#7058</div>
+            <div id = "emailaddress">dong.n@northeastern.edu</div>
+        </div>
         
-    
+        <div id="alert"> Copied to Clipboard!</div>
+        <script src="../js/contact.js"></script>
     </body>
+
+    
 </html>
