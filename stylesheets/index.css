@@ -134,8 +134,9 @@ label{
 ul.nav-menu{
     
     position: absolute;
+    left: 0%;
     top: 30%;
-    transform: translateY(-30%);
+    transform: translateY(-50%);
     transform:translateX(100%);
     z-index: 200;
     display: flex;

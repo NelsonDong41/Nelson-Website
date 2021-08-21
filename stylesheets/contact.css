@@ -2,173 +2,100 @@ html, body{
     height: 100%;
     width: 100%;
     margin: 0;
+    color: white;
 
 }
 
 body{
     position: relative;
     height: 100%;
-    overflow-y:hidden;
     display: flex;
-    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    flex-direction: column;
+    align-items: center;
 }
 
-.content{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-}
 
-h2{
-    font-size: 36px;
-    font-family:'Hidden Cocktails';
-    margin: 5px 0px;
-    height: 50px;
-}
-
-p{
-    margin: 5px 0px;
+.page{
+    width: 50rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient( 179.8deg,  rgba(149,149,149,1) -21.3%, rgba(77,77,77,1) 229.5% );    justify-content: center;
 }
 
 .container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 700px;
-	height: 60vh;
-	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
-	background-color: rgba(255, 255, 255, .15);
-	backdrop-filter: blur(10px);
+    width: 45rem;
+    display: flex;
+    flex-direction: column;
 }
 
-@keyframes infinite-rotate {  
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
+.links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-@keyframes infinite-rotate-reverse {  
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(-360deg); }
+h1{
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 1rem; 
 }
 
 
-.icon-container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    -webkit-animation: infinite-rotate 20s linear infinite;
-    animation: infinite-rotate 20s linear infinite;
+button{
+    width: 7rem;
+    height: 2rem;
+    display:inline-block;
+    padding:0.3rem 1.2rem;
+    margin: 0.3rem;
+    border:0.16em solid rgba(255, 255, 255, 1);
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    background-color:rgb(94, 94, 94);
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.2s;
+}
+
+button:hover{
+    background-color: green;
+    transition: 0.3s;
+    border-color: blue;
+    animation-play-state: paused;
 }
 
 
-.icons{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
-    border: 1px solid black;
-    width: 50%;
-    height: 30%;
+.bouncy{
+
+    animation-duration: 5s; 
+
+    animation-fill-mode: both; 
+
+    animation-name: bounce; 
+    animation-iteration-count: infinite;
     
 }
 
-.icon-item{
-    position: absolute;
-	width: 80px;
-	height: 80px;
-	-webkit-animation: infinite-rotate-reverse 20s linear infinite;
-    animation: infinite-rotate-reverse 20s linear infinite;
+ 
+@keyframes bounce { 
+    0%, 40%, 50%, 60%, 100%{transform: translateY(0);} 
+    45%, 52% {transform: translateY(-0.3rem);}
 }
 
-.icon-item a{
+h1{
+    font-size: 1.5rem;
+}
+
+h3{
     margin: 0;
-    padding: 0;
+    transform: translateY(-0.1rem);
 }
-
-.icon-item img{
-    width: 100%;
-    height: 100%;
-}
-
-.icon-item .text{
-    position: relative;
-    opacity: 0;
-    margin: 0;
-    top: -30%;
-    left: auto;
-    font-family: 'Hidden Cocktails';
-    font-size: 1.3em;
-    text-align: center;
-    
-}
-
-.icon-item:hover img{
-    width: 105%;
-    height: 105%;
-    -ms-transform: translate(-2.5%, -2.5%);
-    transform: translate(-2.5%, -2.5%);
-}
-
-.icon-item:hover .text{
-    opacity: 1;
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
-}
-
-#linkedin{
-    top: -40px;   
-	left: 200px;
-}
-
-#github{
-    top: -40px;   
-	left: -275px;
-}
-
-#email{
-    top: -275px;
-    left: -30px;
-}
-
-#discord{
-    top: 200px;
-    left: -30px;
-}
-
-#alert{
-    width: 50%;
-    text-align: center;
-    color: white;
-    position: absolute;
-    margin: auto;
-    background-color: rgba(0, 0, 0, .2);
-    left: 0;
-    right: 0;
-    bottom: 85%;
-    padding: 5px 0;
-    display: none;
-}
-
-#emailaddress{
-    opacity: 0;
-    height: 0;
-    width: 0;
-}
-
-#discordtag{
-    opacity: 0;
-    height: 0;
-    width: 0;
-}
+/* <div class="tags">
+            <div id="discordtag">Nelson#7058</div>
+            <div id = "emailaddress">dong.n@northeastern.edu</div>
+        </div>
+        
+        <div id="alert"> Copied to Clipboard!</div>
+        <script src="../js/contact.js"></script>
+    </body>*/
