@@ -1,4 +1,6 @@
-
+h3{
+    font-size: 1rem;
+}
  html.fp-enabled,
  .fp-enabled body {
      margin: 0;
@@ -293,17 +295,18 @@
  .wrapper{
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:center;
     align-items: center;
 }
 
- .banner-area{
-    width: 65%;
-    
- }
+.banner-area{
+    margin: 0 10% 0 0;
+    max-width: 30%;
+}
  
 .photo{
-    width: 100%;
+    
+    max-width: 38rem;
     padding: 3%;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
 	background-color: rgba(255, 255, 255, .15);
@@ -320,5 +323,8 @@
 
 .wrapper a{
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
  
