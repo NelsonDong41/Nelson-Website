@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 html, body{
     height: 100%;
     width: 100%;
     margin: 0;
     color: white;
+    font-family: Poppins;
 
 }
 
@@ -14,9 +17,8 @@ body{
     align-items: center;
 }
 
-
 .page{
-    width: 50rem;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -24,64 +26,132 @@ body{
 }
 
 .container{
-    width: 45rem;
+    width: 90%;
     display: flex;
     flex-direction: column;
+    
 }
 
 .links{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 h1{
     font-size: 2rem;
-    text-align: left;
-    margin-bottom: 1rem; 
+    margin: 0;
 }
 
+.name{
+    margin: 40px 0 10px 4px;
+}
+
+i{
+    color: white;
+    font-size: 18px;
+}
 
 button{
-    width: 7rem;
-    height: 2rem;
+    aspect-ratio: 1/1;
+    width: 45px;
     display:inline-block;
-    padding:0.3rem 1.2rem;
-    margin: 0.3rem;
-    border:0.16em solid rgba(255, 255, 255, 1);
+    padding: 0;
+    margin: 0.7rem;
+    border: none;
     border-radius:2em;
-    box-sizing: border-box;
     text-decoration:none;
     background-color:rgb(94, 94, 94);
     text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
     text-align:center;
-    transition: all 0.2s;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    
 }
 
-button:hover{
-    background-color: green;
-    transition: 0.3s;
-    border-color: blue;
-    animation-play-state: paused;
+.tooltip{
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    font-size: 14px;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+
+:root{
+    --linkedin-color :#0e76a8;
+    --github-color: #6cc644;
+    --phone-color: #ea0a8e;
+    --email-color: #e6e6e6;
+}
+
+#linkedin + .tooltip, #linkedin + .tooltip::before, #linkedin:hover{
+    background: var(--linkedin-color);
+}
+
+#phone + .tooltip, #phone + .tooltip::before, #phone:hover{
+    background: var(--phone-color);
+}
+
+#email + .tooltip, #email + .tooltip::before, #email:hover{
+    background: var(--email-color);
+}
+
+#github + .tooltip, #github + .tooltip::before, #github:hover{
+    background: var(--github-color);
+}
+
+.tooltip::before {
+    position: absolute;
+    content: "";
+    top: -4px;
+    height: 8px;
+    width: 8px;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+button:hover + .tooltip {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: none;
 }
 
 
 .bouncy{
-
     animation-duration: 5s; 
-
     animation-fill-mode: both; 
-
     animation-name: bounce; 
     animation-iteration-count: infinite;
-    
 }
 
- 
 @keyframes bounce { 
     0%, 40%, 50%, 60%, 100%{transform: translateY(0);} 
     45%, 52% {transform: translateY(-0.3rem);}
 }
+
+
+button:hover{
+    transition: 0.3s;
+    border-color: white;
+    transform: scale(1.2);
+}
+
+
+
 
 h1{
     font-size: 1.5rem;
@@ -91,6 +161,37 @@ h3{
     margin: 0;
     transform: translateY(-0.1rem);
 }
+
+.separate{
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    justify-content: space-around;
+}
+
+.separate div{
+    display: flex;
+    width: 100%;
+}
+
+.separate div span{
+    width: 70%;
+    border-top:1px solid rgba(255, 255, 255, 1);
+}
+
+.separate .one{
+    justify-content: flex-start;
+}
+
+.separate .two{
+    justify-content: flex-end;
+}
+
+.separate .three{
+    justify-content: center;
+}
+
+
 /* <div class="tags">
             <div id="discordtag">Nelson#7058</div>
             <div id = "emailaddress">dong.n@northeastern.edu</div>

@@ -10,6 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="..\stylesheets\index.css">
         <link rel="stylesheet" href="..\stylesheets\contact.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous" />
     </head>
     <body>
 
@@ -48,23 +49,113 @@
                     <h1>Nelson Dong</h1>
                 </div>
                 <div class="links">
-                    <button type="button" class = "bouncy" style="cursor:pointer; animation-delay:8s" id="linkedin">
-                        Hello
-                    </button>
-                    <button type="button" class = "bouncy" style="cursor:pointer; animation-delay:8.07s;" id="email">
-                        
-                    </button>
-                    <button type="button" class = "bouncy" style="cursor:pointer; animation-delay:8.14s" id="phone">
-                        
-                    </button>
-                    <button type="button" class = "bouncy" style="cursor:pointer; animation-delay:8.21s" id="github">
-                        
-                    </button>
+                    <div class="bouncy wrapper" style = "animation-delay:8s;">
+                        <button type="button" style="cursor:pointer;" id="linkedin" onclick = "opentab('https://www.linkedin.com/in/nelson-dong')">
+                            <i class="fab fa-linkedin"></i>
+                        </button>
+                        <div class = "tooltip">LinkedIn</div>
+                    </div>
+                    
+                    <div class="bouncy wrapper" style= "animation-delay:8.07s;">
+                        <button type="button" style="cursor:pointer;" id="email" onclick = "myFunction(this.id)">
+                            <i class="fas fa-envelope"></i>
+                        </button>
+                        <div class="tooltip">Email</div>
+                        <!-- <div id = "alert"> Copied to Clipboard!</div> -->
+                    </div>
+
+                    <div class="bouncy wrapper" style = animation-delay:8.14s>
+                        <button type="button" style="cursor:pointer;" id="phone" onclick = "myFunction(this.id)">
+                            <i class="fas fa-phone-square-alt"></i>
+                        </button>
+                        <div class = "tooltip">Phone</div>
+                        <!-- <div id = "alert"> Copied to Clipboard!</div> -->
+                    </div>
+
+                    <div class="bouncy wrapper" style = animation-delay:8.21s> 
+                        <button type="button" style="cursor:pointer;" id="github" onclick = "opentab('https://github.com/Nelsondong41')">
+                            <i class="fab fa-github"></i>
+                        </button>
+                        <div class = "tooltip">Github</div>
+                    </div>
+                </div>
+
+                <div class="separate">
+                    <div class = "one">
+                        <span></span>
+                    </div>
+                    <div class = "two">
+                        <span></span>
+                    </div>
+                    <div class = "three">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="left">
+                        <div class="experience"></div>
+                        <div class="education"></div>
+                    </div>
+                    <div class="right">
+                        <div class="hobbies"></div>
+                        <div class="skills"></div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        
+        <script type = "text/javascript">
+            
+            function opentab(link){
+                window.open(link, '_blank');
+            }
+            function copyToClipboard(text){
+                var textArea = document.createElement('textarea');
+                textArea.style.position = 'fixed';
+                textArea.style.top = 1000;
+                textArea.style.left = 1000;
+
+                textArea.style.width = '2em';
+                textArea.style.height = '2em';
+                textArea.border = 'none';
+                textArea.style.outline = 'none';
+                textArea.style.boxShadow = 'none';
+                textArea.style.background = 'black';
+
+                textArea.value = text;
+
+                document.body.appendChild(textArea);
+                textArea.focus();
+                textArea.select();
+
+                try
+                {
+                    var copied = document.execCommand('copy');
+                    var msg = copied ? 'successful' : 'unsuccessful'
+                    console.log('Copying text command was ' + msg);  
+                } 
+                catch (err) 
+                {
+                    console.log('Oops, unable to copy');
+                }
+
+                // document.body.removeChild(textArea);
+                
+                // document.getElementById("alert").style.display = "block";
+                // setTimeout(function(){
+                //     document.getElementById("alert").style.display = "none";
+                // }, 1000);
+                
+            }
+
+            document.getElementById("phone").addEventListener("click", function(){copyToClipboard('9175027700');});
+            document.getElementById("email").addEventListener("click", function(){copyToClipboard('dongn@northeastern.edu');});
+            
+        </script>
+
+        <script src = "../js/contact.js"></script>
+    </body>
 
     
 </html>
